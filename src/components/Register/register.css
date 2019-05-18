@@ -1,0 +1,100 @@
+.Register {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: var(--grey);
+  text-align: center;
+}
+
+.Register > * {
+  width: 365px;
+}
+
+.have-acc {
+  color: var(--grey);
+}
+
+.signin-link {
+  color: var(--blue);
+}
+
+label {
+  font-size: 12px;
+  color: var(--label-color);
+}
+
+.error {
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--red);
+  border-radius: 4px;
+  background: rgba(244,	67,	54, 0.2);
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  font-size: 15px;
+  color: var(--input-color);
+}
+
+input::placeholder {
+  color: var(--grey);
+}
+
+input:focus {
+  outline-color: var(--green);
+}
+
+#policy {
+  font-size: 20px;
+  width: auto;
+  margin: 0 10px;
+}
+
+.policy-par {
+  display: inline-block;
+  width: 90%;
+  color: var(--grey);
+  font-size: 12px;
+}
+
+.policy-link {
+  color: var(--blue);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#submit {
+  margin: 15px 0;
+  padding: 10px 0;
+  background: var(--green);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  color: #fff;  
+  border: none;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1980px) {
+  .Register {
+    height: 100vh;
+    width: 50%;
+  }
+
+  .Register > * {
+  width: 450px;
+}
+}
